@@ -1,0 +1,42 @@
+<div class="employee-layout">
+    <div class="base-section">
+        <h1 appRedText>Welcome Manger <span class="pointer" style="float: right;color: blue" routerLink='/'>Logout</span></h1>
+    </div>
+    <div class="table container p-12">
+        <table>
+            <thead>
+                <tr>
+                    <th>Emp id</th>
+                    <th>Emp Name</th>
+                    <th>Project Name</th>
+                    <th>Rating</th>
+                    <th>Comments</th>
+                    <th>Manager Rating</th>
+                    <th>Manager Comments</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of userFeedbackArray;let i=index">
+                    <td>{{item.empid}}</td>
+                    <td>{{item.empname}}</td>
+                    <td>{{item.projectname}}</td>
+                    <td>{{item.rating}}</td>
+                    <td>{{item.comment}}</td>
+                    <td>
+                        <input type="number" [(ngModel)]="item.manegerrating" [ngClass]="item.iseditable?'':'no-input'"
+                            [disabled]="!item.iseditable" max="5" min="0" />
+                    </td>
+                    <td><input type="text" [(ngModel)]="item.managercomment" [ngClass]="item.iseditable?'':'no-input'"
+                            [disabled]="!item.iseditable" /></td>
+                    <td>
+                        <span *ngIf="!item.iseditable" class="action edit" (click)="editRec(i)">Edit</span>
+                        <span *ngIf="item.iseditable" class="action save" (click)="updateRec(i)">Save</span>
+                        <span class="action del" (click)="deleteRec(item.id)">Delete</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

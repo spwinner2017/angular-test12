@@ -1,0 +1,26 @@
+<div class="table container">
+    <table>
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Rating</th>
+                <th>Comments</th>
+                <th>Manager Rating</th>
+                <th>Manager Comments</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of userFeedbackArray">
+                <td>{{item.projectname}}</td>
+                <td><span>{{getStar(item.rating)}}</span></td>
+                <td>{{item.comment}}</td>
+                <td><span>{{getStar(item.manegerrating)}}</span></td>
+                <td>{{item.managercomment}}</td>
+                <td><span *ngIf="!item.isreviewd"> <span class="action edit">Edit</span><span
+                            class="action del">Delete</span></span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

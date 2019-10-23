@@ -1,0 +1,15 @@
+<div class="employee-layout">
+    <div class="base-section">
+        <h1 appRedText>Welcome Employee <span class="pointer" style="float: right;color: blue" routerLink='/'>Logout</span></h1>
+    
+    </div>
+    <div class="p-12">
+        <ul class="menu-item">
+            <li  class="pointer" (click)="changeTab(0)">Feedback</li>
+            <li class="pointer" (click)="changeTab(1)">List</li>
+        </ul>
+        <app-feedback *ngIf="tabMode===tabModeenum.FEEDBACK" (tabChange)='changeTab($event)'></app-feedback>
+        <app-project-list *ngIf="tabMode===tabModeenum.LIST"></app-project-list>
+    </div>
+
+</div>

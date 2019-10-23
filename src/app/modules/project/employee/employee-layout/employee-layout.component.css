@@ -1,0 +1,27 @@
+.employee-layout {
+	border: 1px solid #757171;
+	height: 100%;
+}
+.base-section {
+	border-bottom: 1px solid #757171;
+	font-size: 8px;
+	padding: 5px 17px;
+	line-height: 7px;
+	vertical-align: middle;
+}
+.p-12 {
+	padding: 12px;
+}
+p {
+	font-family: Lato;
+}
+.menu-item {
+	list-style-type: none;
+	display: inline-flex;
+}
+ul.menu-item > li {
+	padding-left: 40px;
+}
+.pointer {
+	cursor: pointer;
+}

@@ -1,0 +1,63 @@
+th,
+td {
+	padding: 9px;
+	text-align: center;
+	margin: 7px;
+}
+
+th {
+	border: 1px solid #000;
+}
+table {
+	border: none;
+	border-collapse: collapse;
+}
+
+table td {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+table tr:last-child {
+	border-bottom: 1px solid #000;
+}
+
+.action {
+	padding: 18px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.edit {
+	color: blue;
+}
+.del {
+	color: red;
+}
+.no-input {
+	background: white;
+	border: none;
+}
+.hide {
+	visibility: hidden;
+}
+.save {
+	color: white;
+	color: green;
+	height: 7px;
+	width: 15px;
+}
+.employee-layout {
+	border: 1px solid #757171;
+	height: 100%;
+}
+.base-section {
+	border-bottom: 1px solid #757171;
+	font-size: 8px;
+	padding: 5px 17px;
+	line-height: 7px;
+	vertical-align: middle;
+	margin-bottom: 24px;
+}
+.p-12 {
+	padding: 12px;
+}

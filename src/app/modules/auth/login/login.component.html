@@ -1,0 +1,12 @@
+<div class="login">
+  <h1>Welcome</h1>
+  <form [formGroup]="loginFormGroup" (ngSubmit)="login()">
+  <input type="text" formControlName="username" placeholder="Username" id="username" required>  
+<input type="password" placeholder="password" id="password" formControlName="password" required>  
+<a href="#" class="forgot">forgot password?</a>
+<input type="submit" value="login">
+</form>
+<p *ngIf="loginFormGroup.invalid==true" style="color: red;text-align: center">Fill all the details</p>
+<p style="padding-top: 55px;">use 'emplyoee@test.com' for emplyee role & 'manger@test.com' for manager role.</p>
+</div>
+

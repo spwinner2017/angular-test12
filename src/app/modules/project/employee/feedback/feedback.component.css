@@ -1,0 +1,28 @@
+.side-label {
+	display: inline-block;
+	font-size: 18px;
+	min-width: 130px;
+}
+.input {
+	padding: 7px;
+	border-radius: 4px;
+}
+.item-group {
+	display: block;
+	padding-bottom: 22px;
+}
+.product-list {
+	width: 188px;
+	text-align: center;
+}
+.rating-tab {
+	padding-left: 130px;
+	display: inline-block;
+}
+.comment {
+	vertical-align: top;
+}
+button.button {
+	padding: 8px;
+	margin-right: 13px;
+}
