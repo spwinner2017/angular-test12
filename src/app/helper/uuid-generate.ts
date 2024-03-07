@@ -1,3 +1,3 @@
-export function uuidv4() {
+export function getdata() {
     return true
 }
